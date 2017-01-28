@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tunnel": "node lt --subdomain botkit-messanger-express-demo --port 5000"
+    "tunnel": "lt --subdomain syscoassist --port 5000",
+    "local": "NODE_ENV=dev node ./server.js"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "xtend": "^4.0.1"
   },
   "devDependencies": {
-    "localtunnel": "^1.8.2"
+    "localtunnel": "^1.8.2",
+    "opn": "^4.0.2"
   }
 }
