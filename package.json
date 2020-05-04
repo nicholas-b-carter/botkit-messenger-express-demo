@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tunnel": "lt --subdomain syscoassist --port 5000",
-    "local": "NODE_ENV=dev node ./server.js"
+    "local": "NODE_ENV=dev node ./server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -22,10 +24,12 @@
     "mongodb": "^2.1.20",
     "monkii": "^1.2.0",
     "request": "^2.74.0",
-    "xtend": "^4.0.1"
+    "xtend": "^4.0.1",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "localtunnel": "^1.8.2",
     "opn": "^4.0.2"
-  }
+  },
+  "snyk": true
 }
